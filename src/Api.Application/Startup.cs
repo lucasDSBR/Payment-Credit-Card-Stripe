@@ -78,14 +78,12 @@ namespace application
                     TermsOfService = new Uri("http://www.mfrinfo.com.br"),
                     Contact = new OpenApiContact
                     {
-                        Name = "Marcos Fabricio Rosa",
-                        Email = "mfr@mail.com",
-                        Url = new Uri("http://www.mfrinfo.com.br")
+                        Name = "Lucas Maciel",
+                        Email = "lucasmaciel6690@gmail.com",
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "Termo de Licença de Uso",
-                        Url = new Uri("http://www.mfrinfo.com.br")
+                        Name = "Termo de Licença de Uso"
                     }
                 });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
