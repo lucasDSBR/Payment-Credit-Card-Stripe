@@ -16,7 +16,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-
+using Stripe;
 namespace application
 {
     public class Startup
@@ -116,6 +116,8 @@ namespace application
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            StripeConfiguration.ApiKey = "sk_test_51KbZzEEWnYbF9to6D4dp2wB4u4EBk8Lp2jDhZycMWDg0SAl2oSTaBicJzqLdzsTRpSPsXsDXy22MFFhi9BVGaKlg009R4HVArL";
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
